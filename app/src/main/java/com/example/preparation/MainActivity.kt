@@ -4,6 +4,7 @@ import android.content.Intent
 import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.WindowManager
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
@@ -13,8 +14,23 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+        )
 
         val bgImage: ImageView = findViewById(R.id.image)
+//        val text: TextView = findViewById(R.id.motto)
+//
+//        val imageAnimation = AnimationUtils.loadAnimation(this, androidx.appcompat.R.anim.abc_fade_out)
+//
+//        bgImage.startAnimation(imageAnimation)
+//
+//
+//        val textAnimation = AnimationUtils.loadAnimation(this, androidx.appcompat.R.anim.abc_fade_in)
+//
+//         text.startAnimation(textAnimation)
+
         val text: TextView = findViewById(R.id.motto)
 
         val oneAnimation = AnimationUtils.loadAnimation(this, R.anim.one_animation)
