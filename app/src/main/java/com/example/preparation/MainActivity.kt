@@ -20,16 +20,6 @@ class MainActivity : AppCompatActivity() {
         )
 
         val bgImage: ImageView = findViewById(R.id.image)
-//        val text: TextView = findViewById(R.id.motto)
-//
-//        val imageAnimation = AnimationUtils.loadAnimation(this, androidx.appcompat.R.anim.abc_fade_out)
-//
-//        bgImage.startAnimation(imageAnimation)
-//
-//
-//        val textAnimation = AnimationUtils.loadAnimation(this, androidx.appcompat.R.anim.abc_fade_in)
-//
-//         text.startAnimation(textAnimation)
 
         val text: TextView = findViewById(R.id.motto)
 
